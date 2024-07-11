@@ -37,7 +37,7 @@ public class StringPractice02 {
 		String mon, gen = "여자", ye = "19"+ year;
 		
 		// 태어난 해 4자리로 만들기
-		if (year >= 0 && year <= 24) {
+		if (year <= 24) {
 			ye = "20" + year;
 		}
 		
