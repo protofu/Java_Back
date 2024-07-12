@@ -7,6 +7,8 @@ public class Student {
 	int m_score;
 	int s_score;
 
+	Student() {}
+	
 	Student(String name, int k_score, int e_score, int m_score, int s_score) {
 		this.name = name;
 		this.k_score = k_score;
