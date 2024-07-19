@@ -35,11 +35,11 @@ public class Bank {
 		}
 
 		// 계좌 메소드 (잔액 출력 toString, 입금 deposit, 출금 withdraw)
-		public void withdraw(int money) {
+		public void withdraw(int money) throws MyException {
 			if (this.balance >= money) {				
 				this.balance -= money;
 			} else {
-				System.out.println("잔고 부족");
+				throw new MyException("잔액 부족쓰");
 			}
 		}
 

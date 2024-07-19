@@ -1,31 +1,27 @@
 package com.algo.main;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int[][] arr = new int[9][9];
-		int count = 0;
-		int count2 = 0;
-		int max=0;
+	public static void main(String[] args) throws IOException {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		
-		for(int i = 0; i<9; i++) {
-			for(int j= 0; j<9; j++) {
-				arr[i][j]=sc.nextInt();
-				if(max<arr[i][j]) {
-					max = arr[i][j];
-					count = i+1;
-					count2 = j+1;
-				}
-					
-				
+		int[] arr = new int[10001];
+		
+		int n = Integer.parseInt(reader.readLine());
+		for (int i = 0; i<n;i++) {
+			int num = Integer.parseInt(reader.readLine());
+			arr[num]++;
+		}
+		
+		for (int i=0;i<10001;i++) {
+			for (int j=0;j<arr[i];j++) {
+				System.out.println(i);
 			}
 		}
-
-		System.out.println(max);
-		System.out.println(count +" "+count2);
 		
 	}
 
