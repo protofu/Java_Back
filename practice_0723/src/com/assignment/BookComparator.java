@@ -1,6 +1,13 @@
 package com.assignment;
 
+import java.util.Comparator;
+
 public class BookComparator {
+
+	public static Comparator<Book> byTitle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	// static Comparator<Book> byTitle()
 	// 제목을 기준으로 정렬
 	
