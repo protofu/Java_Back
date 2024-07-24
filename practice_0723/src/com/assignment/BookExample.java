@@ -1,5 +1,11 @@
 package com.assignment;
 
+import java.util.Map;
+import java.util.Queue;
+import java.util.Stack;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
 public class BookExample {
 	public static void main(String[] args) {
 		BookManager bm = new BookManager();
@@ -11,19 +17,19 @@ public class BookExample {
 		
 		System.out.println("제목을 기준으로 정렬 합니다.");
 		bm.sortBooksBy(BookComparator.byTitle());
-		bm.books.forEach(System.out::println);
+		bm.getBooks().forEach(System.out::println);
 		
 		System.out.println("\n 작가를 기준으로 정렬 합니다.");
 		bm.sortBooksBy(BookComparator.byAuthor());
-		bm.books.forEach(System.out::println);
+		bm.getBooks().forEach(System.out::println);
 		
 		System.out.println("\n 출판연도를 기준으로 정렬 합니다.");
 		bm.sortBooksBy(BookComparator.byYear());
-		bm.books.forEach(System.out::println);
+		bm.getBooks().forEach(System.out::println);
 		
 		System.out.println("\n 총 페이지 수를 기준으로 정렬 합니다.");
 		bm.sortBooksBy(BookComparator.byPages());
-		bm.books.forEach(System.out::println);
+		bm.getBooks().forEach(System.out::println);
 		
 		Stack<Book> stack = bm.getStack();
 		System.out.println("\n 스택 출력");
