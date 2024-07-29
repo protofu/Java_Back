@@ -242,4 +242,11 @@ SELECT * FROM tcar WHERE maker='현대';
 
 -- promotion_tbl -> Product C 의 프로모션 메세지
 SELECT * FROM promotion_tbl;
-SELECT promotion_msg FROM promotion_tbl WHERE product_name='Product C';
+SELECT 
+    promotion_msg
+FROM
+    promotion_tbl
+WHERE
+    product_name = 'Product C';
+    
+    
