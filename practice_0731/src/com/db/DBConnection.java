@@ -1,16 +1,12 @@
 package com.db;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 
 public class DBConnection {
@@ -37,7 +33,6 @@ public class DBConnection {
 ////			ResultSet rs =  stmt.executeQuery(sql);
 ////			
 //			String sql = "SELECT * FROM users WHERE email = ? AND password = ?";
-//			conn.prepareStatement(sql);
 //			PreparedStatement pstmt = conn.prepareStatement(sql);
 //			pstmt.setString(1, userEmail);
 //			pstmt.setString(2, userPassword);
