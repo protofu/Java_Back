@@ -165,3 +165,5 @@ select ed.* from followers f
 join users ing on f.following_id = ing.id
 join users ed on f.followed_id = ed.id
 where ing.id = 2;
+
+SELECT * FROM followers f join users ing ON ing.id = f.follwing_id join Users ed ON ed.id = f.followed_id WHERE followed_id = 16 AND f.deleted_at IN NULL

@@ -6,12 +6,12 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/WD/Desktop/Java_study/workspace/lombok.jar">
+	<classpathentry kind="lib" path="C:/Users/WD/Desktop/2024-07_Java_KOSTA/2_java/workspace/lombok.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/WD/Downloads/mysql-connector-j-9.0.0/mysql-connector-j-9.0.0/mysql-connector-j-9.0.0.jar">
+	<classpathentry kind="lib" path="C:/Users/WD/Desktop/2024-07_Java_KOSTA/2_java/workspace/mysql-connector-j-9.0.0.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
